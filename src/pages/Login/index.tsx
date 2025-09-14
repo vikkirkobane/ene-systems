@@ -35,52 +35,43 @@ const Login = () => {
       </Helmet>
 
       <main className="w-full min-h-screen">
-        <div className="flex flex-col lg:flex-row justify-between items-start w-full min-h-screen">
+        <div className="flex flex-col lg:flex-row w-full min-h-screen">
           {/* Left Section - Hero */}
-          <section className="w-full lg:w-[52%] h-auto lg:min-h-screen relative bg-background-primary">
+          <section className="w-full lg:w-1/2 min-h-screen relative bg-background-primary flex items-center justify-center">
             {/* Background Image */}
             <div 
               className="absolute inset-0 bg-cover bg-center opacity-20"
               style={{ backgroundImage: "url('/images/img_shapes.svg')" }}
             />
             
-            <div className="relative z-10 flex flex-col justify-start items-center self-center w-full h-full pt-12xl pr-12xl pb-12xl pl-12xl">
-              <div className="flex flex-col gap-17xl justify-start items-start w-full mb-18xl">
+            <div className="relative z-10 flex flex-col justify-center items-center w-full max-w-lg px-8 py-12">
+              <div className="flex flex-col gap-8 justify-start items-center w-full text-center">
                 {/* Logo */}
                 <img 
                   src="/images/img_logo_removebg_preview.png" 
                   alt="EnE Systems Logo"
-                  className="w-[94px] h-[56px] sm:w-[120px] sm:h-[72px] md:w-[140px] md:h-[84px]"
+                  className="w-24 h-14 mb-8"
                 />
                 
                 {/* Content */}
-                <div className="flex flex-col gap-8xl justify-start items-center w-full px-9xl lg:px-10xl">
+                <div className="flex flex-col gap-8 justify-start items-center w-full">
                   {/* Main Heading */}
-                  <h1 className="text-[32px] sm:text-[48px] md:text-[56px] lg:text-xl font-semibold leading-[40px] sm:leading-[58px] md:leading-[68px] lg:leading-xl text-center text-text-white">
+                  <h1 className="text-4xl lg:text-5xl font-semibold text-center text-text-white mb-4">
                     Hello there!
                   </h1>
                   
                   {/* Description and CTA */}
-                  <div className="flex flex-col gap-11xl justify-start items-center w-full">
-                    <p className="text-sm sm:text-base md:text-md font-normal leading-sm sm:leading-md text-center text-text-white w-full">
+                  <div className="flex flex-col gap-8 justify-start items-center w-full">
+                    <p className="text-base font-normal leading-relaxed text-center text-text-white max-w-md">
                       It is good to have you back. To stay connected, please login with your details or create account to get started
                     </p>
                     
                     {/* Watch Demo Button */}
-                    <div className="mx-14xl">
+                    <div>
                       <Button
                         text="Watch Demo Videos"
-                        text_font_size="15"
-                        text_font_family="Inter"
-                        text_font_weight="600"
-                        text_line_height="19px"
-                        text_color="#ffffff"
-                        border_border="2 solid #ffffff"
-                        border_border_radius="18px"
-                        padding="t=6px,r=58px,b=6px,l=34px"
-                        layout_gap="8px"
                         onClick={handleWatchDemo}
-                        className="flex items-center gap-2"
+                        className="flex items-center gap-2 px-6 py-3 border-2 border-white text-white rounded-full hover:bg-white hover:text-background-primary transition-colors"
                       >
                         <span>Watch Demo Videos</span>
                         <img 
@@ -97,34 +88,34 @@ const Login = () => {
           </section>
 
           {/* Right Section - Login Form */}
-          <section className="w-full lg:w-[38%] h-auto lg:min-h-screen relative bg-gray-50">
+          <section className="w-full lg:w-1/2 min-h-screen relative bg-gray-50 flex items-center justify-center">
             {/* Background Image */}
             <div 
               className="absolute inset-0 bg-cover bg-center opacity-10"
               style={{ backgroundImage: "url('/images/img_.png')" }}
             />
             
-            <div className="relative z-10 flex flex-col gap-4xl justify-start items-center w-full pt-3xl sm:pt-13xl px-4 sm:px-6 lg:px-3xl pb-8">
+            <div className="relative z-10 flex flex-col justify-center items-center w-full max-w-md px-8 py-12">
               {/* Tab Navigation */}
-              <div className="flex flex-row justify-between items-center w-1/2 sm:w-auto gap-8 sm:gap-16">
+              <div className="flex flex-row justify-center items-center gap-16 mb-8">
                 <Link 
                   to="/register"
-                  className="text-md font-normal leading-md text-text-primary hover:text-text-accent transition-colors duration-200"
+                  className="text-lg font-normal text-text-primary hover:text-text-accent transition-colors duration-200"
                 >
                   Register
                 </Link>
-                <div className="flex flex-row justify-center items-center w-auto border-b-medium border-border-accent pt-md pr-md pb-md pl-md">
-                  <span className="text-md font-bold leading-md text-text-accent">
+                <div className="flex flex-row justify-center items-center border-b-2 border-border-accent pb-2">
+                  <span className="text-lg font-bold text-text-accent">
                     Login
                   </span>
                 </div>
               </div>
 
               {/* Login Form Card */}
-              <div className="bg-background-white rounded-lg pt-3xl pr-3xl pb-3xl pl-3xl mt-13xl mr-16xl w-full max-w-md lg:max-w-none">
-                <form onSubmit={handleLogin} className="flex flex-col gap-4xl justify-start items-center w-full">
+              <div className="bg-background-white rounded-lg p-8 w-full shadow-lg">
+                <form onSubmit={handleLogin} className="flex flex-col gap-6 justify-start items-center w-full">
                   {/* Form Fields */}
-                  <div className="flex flex-col gap-4xl justify-start items-center w-full mx-2xl">
+                  <div className="flex flex-col gap-6 justify-start items-center w-full">
                     {/* Email Input */}
                     <div className="relative w-full">
                       <img 
@@ -137,22 +128,13 @@ const Login = () => {
                         placeholder="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        text_font_size="15"
-                        text_font_family="Inter"
-                        text_font_weight="400"
-                        text_line_height="19px"
-                        text_color="#0000007f"
-                        border_border="1 solid #0000007f"
-                        border_border_radius="8px"
-                        padding="t=16px,r=12px,b=16px,l=58px"
-                        layout_gap="26px"
-                        className="pl-14"
+                        className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                         required
                       />
                     </div>
 
                     {/* Password Section */}
-                    <div className="flex flex-col gap-xl justify-start items-start w-full">
+                    <div className="flex flex-col gap-4 justify-start items-start w-full">
                       {/* Password Input */}
                       <div className="relative w-full">
                         <img 
@@ -165,16 +147,7 @@ const Login = () => {
                           placeholder="Password"
                           value={password}
                           onChange={(e) => setPassword(e.target.value)}
-                          text_font_size="15"
-                          text_font_family="Inter"
-                          text_font_weight="400"
-                          text_line_height="19px"
-                          text_color="#0000007f"
-                          border_border="1 solid #0000007f"
-                          border_border_radius="8px"
-                          padding="t=16px,r=12px,b=16px,l=58px"
-                          layout_gap="26px"
-                          className="pl-14"
+                          className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                           required
                         />
                       </div>
@@ -182,7 +155,7 @@ const Login = () => {
                       {/* Forgot Password Link */}
                       <Link 
                         to="/forgot-password"
-                        className="text-sm font-semibold leading-sm text-text-accent hover:underline mb-xs"
+                        className="text-sm font-semibold text-text-accent hover:underline"
                       >
                         Forgot Password
                       </Link>
@@ -190,22 +163,13 @@ const Login = () => {
                   </div>
 
                   {/* Login Actions */}
-                  <div className="flex flex-col gap-sm justify-start items-center w-full">
+                  <div className="flex flex-col gap-4 justify-start items-center w-full">
                     {/* Login Button */}
                     <Button
                       type="submit"
                       text="Log in"
-                      text_font_size="15"
-                      text_font_family="Inter"
-                      text_font_weight="600"
-                      text_line_height="19px"
-                      text_color="#ffffff"
-                      fill_background_color="#ff9800"
-                      border_border_radius="18px"
-                      padding="t=6px,r=58px,b=6px,l=34px"
-                      layout_gap="8px"
                       disabled={isLoading}
-                      className="w-full flex items-center justify-center gap-2"
+                      className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors disabled:opacity-50"
                     >
                       {isLoading ? (
                         <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
@@ -222,9 +186,9 @@ const Login = () => {
                     </Button>
 
                     {/* Divider */}
-                    <div className="flex flex-row gap-xl justify-center items-center w-full pt-xs pr-xs pb-xs pl-xs mx-2xl">
+                    <div className="flex flex-row gap-4 justify-center items-center w-full py-4">
                       <div className="h-[1px] w-full bg-line-background" />
-                      <span className="text-sm font-normal leading-sm text-text-primary px-2">
+                      <span className="text-sm font-normal text-text-primary px-2">
                         Or
                       </span>
                       <div className="h-[1px] w-full bg-line-background" />
@@ -233,18 +197,8 @@ const Login = () => {
                     {/* Google Login Button */}
                     <Button
                       text="Google"
-                      text_font_size="15"
-                      text_font_family="Inter"
-                      text_font_weight="400"
-                      text_line_height="19px"
-                      text_color="#000000"
-                      fill_background_color="#ffffff"
-                      effect_box_shadow="4px 4px 20px #00000019"
-                      border_border_radius="20px"
-                      padding="t=8px,r=34px,b=8px,l=76px"
-                      layout_gap="18px"
                       onClick={handleGoogleLogin}
-                      className="w-full flex items-center justify-center gap-4"
+                      className="w-full flex items-center justify-center gap-4 px-6 py-3 bg-white border border-gray-300 text-black rounded-full hover:bg-gray-50 transition-colors shadow-md"
                     >
                       <img 
                         src="/images/img_flatcoloriconsgoogle.svg" 
