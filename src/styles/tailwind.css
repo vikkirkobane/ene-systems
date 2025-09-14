@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Text Colors */
+    --text-primary: #000000;
+    --text-secondary: #0000007f;
+    --text-accent: #ff9800;
+    --text-white: #ffffff;
+
+    /* Background Colors */
+    --bg-overlay: #0000007f;
+    --bg-primary: #d47e00;
+    --bg-accent: #ff9800;
+    --bg-white: #ffffff;
+
+    /* Border Colors */
+    --border-secondary: #0000007f;
+    --border-accent: #ff9800;
+    --border-white: #ffffff;
+
+    /* Typography Variables */
+    --font-size-xs: 12px;
+    --font-size-sm: 15px;
+    --font-size-md: 18px;
+    --font-size-xl: 64px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Height Variables */
+    --line-height-xs: 16px;
+    --line-height-sm: 19px;
+    --line-height-md: 22px;
+    --line-height-lg: 28px;
+    --line-height-xl: 78px;
+
+    /* Spacing Variables */
+    --spacing-xs: 6px;
+    --spacing-sm: 8px;
+    --spacing-md: 10px;
+    --spacing-lg: 12px;
+    --spacing-xl: 16px;
+    --spacing-2xl: 18px;
+    --spacing-3xl: 20px;
+    --spacing-4xl: 24px;
+    --spacing-5xl: 26px;
+    --spacing-6xl: 28px;
+    --spacing-7xl: 34px;
+    --spacing-8xl: 40px;
+    --spacing-9xl: 42px;
+    --spacing-10xl: 44px;
+    --spacing-11xl: 48px;
+    --spacing-12xl: 50px;
+    --spacing-13xl: 58px;
+    --spacing-14xl: 62px;
+    --spacing-15xl: 76px;
+    --spacing-16xl: 98px;
+    --spacing-17xl: 152px;
+    --spacing-18xl: 218px;
+
+    /* Border Radius Variables */
+    --radius-xs: 6px;
+    --radius-sm: 8px;
+    --radius-md: 18px;
+    --radius-lg: 20px;
+
+    /* Border Width Variables */
+    --border-width-none: 0px;
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+
+    /* Component-specific Variables */
+    --button-bg-primary: var(--bg-accent);
+    --button-bg-secondary: var(--bg-white);
+    --button-text-primary: var(--text-white);
+    --button-text-secondary: var(--text-primary);
+    --button-border: var(--border-white);
+
+    --input-text: var(--text-secondary);
+    --input-border: var(--border-secondary);
+
+    --link-text-primary: var(--text-primary);
+    --link-text-accent: var(--text-accent);
+
+    --line-bg: var(--bg-overlay);
+  }
+}
