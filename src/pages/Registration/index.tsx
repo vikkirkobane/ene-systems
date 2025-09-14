@@ -222,9 +222,9 @@ const Registration = () => {
               </div>
 
               {/* Registration Form */}
-              <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4xl">
+              <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
                 {/* First Name & Last Name Row */}
-                <div className="flex flex-row gap-xl w-full px-2xl">
+                <div className="flex flex-row gap-4 w-full px-4">
                   <div className="w-full">
                     <div className="relative">
                       <img 
@@ -276,7 +276,7 @@ const Registration = () => {
                 </div>
 
                 {/* Company Field */}
-                <div className="px-2xl">
+                <div className="px-4">
                   <div className="relative">
                     <img 
                       src="/images/img_carbonlocationcompanyfilled.svg" 
@@ -302,7 +302,7 @@ const Registration = () => {
                 </div>
 
                 {/* Email Field */}
-                <div className="px-2xl">
+                <div className="px-4">
                   <div className="relative">
                     <img 
                       src="/images/img_mageemail.svg" 
@@ -329,7 +329,7 @@ const Registration = () => {
                 </div>
 
                 {/* Contact Field */}
-                <div className="px-2xl">
+                <div className="px-4">
                   <div className="relative">
                     <img 
                       src="/images/img_icbaselinephone.svg" 
@@ -356,7 +356,7 @@ const Registration = () => {
                 </div>
 
                 {/* Password Field */}
-                <div className="px-2xl">
+                <div className="px-4">
                   <div className="relative">
                     <img 
                       src="/images/img_gameiconsplainpadlock.svg" 
@@ -383,7 +383,7 @@ const Registration = () => {
                 </div>
 
                 {/* Confirm Password Field */}
-                <div className="px-2xl">
+                <div className="px-4">
                   <div className="relative">
                     <img 
                       src="/images/img_gameiconsplainpadlock.svg" 
@@ -410,7 +410,7 @@ const Registration = () => {
                 </div>
 
                 {/* Submit Button and Social Login */}
-                <div className="flex flex-col gap-sm justify-start items-center w-full">
+                <div className="flex flex-col gap-4 justify-start items-center w-full mt-6">
                   <Button
                     text="Create Account"
                     text_font_size="15"
@@ -442,8 +442,8 @@ const Registration = () => {
                   </Button>
 
                   {/* Divider and Google Sign Up */}
-                  <div className="flex flex-col gap-sm justify-start items-center w-full px-2xl">
-                    <div className="flex flex-row gap-xl justify-center items-center w-full py-xs">
+                  <div className="flex flex-col gap-4 justify-start items-center w-full px-4">
+                    <div className="flex flex-row gap-4 justify-center items-center w-full py-2">
                       <div className="w-[140px] h-[1px] bg-line-background" />
                       <span className="text-sm font-normal leading-sm text-text-primary">
                         Or
@@ -472,7 +472,7 @@ const Registration = () => {
                         alt="" 
                         className="w-4xl h-4xl"
                       />
-                      <span>Google</span>
+                      <span className="ml-2">Google</span>
                     </Button>
                   </div>
                 </div>
