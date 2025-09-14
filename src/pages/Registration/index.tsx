@@ -230,7 +230,7 @@ const Registration = () => {
                       <img 
                         src="/images/img_solaruseroutline.svg" 
                         alt="" 
-                        className="absolute left-lg top-1/2 transform -translate-y-1/2 w-xl h-xl z-10"
+                        className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 z-10"
                       />
                       <EditText
                         placeholder="First name"
@@ -241,11 +241,11 @@ const Registration = () => {
                         text_color="#0000007f"
                         border_border="0 solid #0000007f"
                         border_border_radius="6px"
-                        padding="t=12px,r=12px,b=12px,l=48px"
+                        padding="t=12px,r=12px,b=12px,l=40px"
                         value={formData.firstName}
                         onChange={handleInputChange('firstName')}
                         error={errors.firstName}
-                        className="w-full"
+                        className="w-full pl-10"
                       />
                     </div>
                   </div>
@@ -254,7 +254,7 @@ const Registration = () => {
                       <img 
                         src="/images/img_solaruseroutline.svg" 
                         alt="" 
-                        className="absolute left-lg top-1/2 transform -translate-y-1/2 w-xl h-xl z-10"
+                        className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 z-10"
                       />
                       <EditText
                         placeholder="Last name"
@@ -265,11 +265,11 @@ const Registration = () => {
                         text_color="#0000007f"
                         border_border="0 solid #0000007f"
                         border_border_radius="6px"
-                        padding="t=12px,r=12px,b=12px,l=48px"
+                        padding="t=12px,r=12px,b=12px,l=40px"
                         value={formData.lastName}
                         onChange={handleInputChange('lastName')}
                         error={errors.lastName}
-                        className="w-full"
+                        className="w-full pl-10"
                       />
                     </div>
                   </div>
@@ -281,7 +281,7 @@ const Registration = () => {
                     <img 
                       src="/images/img_carbonlocationcompanyfilled.svg" 
                       alt="" 
-                      className="absolute left-lg top-1/2 transform -translate-y-1/2 w-[20px] h-[20px] z-10"
+                      className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 z-10"
                     />
                     <EditText
                       placeholder="Company"
@@ -292,11 +292,11 @@ const Registration = () => {
                       text_color="#0000007f"
                       border_border="1 solid #0000007f"
                       border_border_radius="8px"
-                      padding="t=16px,r=12px,b=16px,l=58px"
+                      padding="t=16px,r=12px,b=16px,l=40px"
                       value={formData.company}
                       onChange={handleInputChange('company')}
                       error={errors.company}
-                      className="w-full"
+                      className="w-full pl-10"
                     />
                   </div>
                 </div>
@@ -307,7 +307,7 @@ const Registration = () => {
                     <img 
                       src="/images/img_mageemail.svg" 
                       alt="" 
-                      className="absolute left-lg top-1/2 transform -translate-y-1/2 w-[20px] h-[20px] z-10"
+                      className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 z-10"
                     />
                     <EditText
                       placeholder="Email"
@@ -318,12 +318,12 @@ const Registration = () => {
                       text_color="#0000007f"
                       border_border="1 solid #0000007f"
                       border_border_radius="8px"
-                      padding="t=16px,r=12px,b=16px,l=58px"
+                      padding="t=16px,r=12px,b=16px,l=40px"
                       type="email"
                       value={formData.email}
                       onChange={handleInputChange('email')}
                       error={errors.email}
-                      className="w-full"
+                      className="w-full pl-10"
                     />
                   </div>
                 </div>
@@ -334,7 +334,7 @@ const Registration = () => {
                     <img 
                       src="/images/img_icbaselinephone.svg" 
                       alt="" 
-                      className="absolute left-lg top-1/2 transform -translate-y-1/2 w-[20px] h-[20px] z-10"
+                      className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 z-10"
                     />
                     <EditText
                       placeholder="Contact"
@@ -345,12 +345,12 @@ const Registration = () => {
                       text_color="#0000007f"
                       border_border="1 solid #0000007f"
                       border_border_radius="8px"
-                      padding="t=16px,r=12px,b=16px,l=58px"
+                      padding="t=16px,r=12px,b=16px,l=40px"
                       type="tel"
                       value={formData.contact}
                       onChange={handleInputChange('contact')}
                       error={errors.contact}
-                      className="w-full"
+                      className="w-full pl-10"
                     />
                   </div>
                 </div>
@@ -361,7 +361,7 @@ const Registration = () => {
                     <img 
                       src="/images/img_gameiconsplainpadlock.svg" 
                       alt="" 
-                      className="absolute left-lg top-1/2 transform -translate-y-1/2 w-[20px] h-[20px] z-10"
+                      className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 z-10"
                     />
                     <EditText
                       placeholder="Password"
@@ -372,12 +372,12 @@ const Registration = () => {
                       text_color="#0000007f"
                       border_border="1 solid #0000007f"
                       border_border_radius="8px"
-                      padding="t=16px,r=12px,b=16px,l=58px"
+                      padding="t=16px,r=12px,b=16px,l=40px"
                       type="password"
                       value={formData.password}
                       onChange={handleInputChange('password')}
                       error={errors.password}
-                      className="w-full"
+                      className="w-full pl-10"
                     />
                   </div>
                 </div>
@@ -388,7 +388,7 @@ const Registration = () => {
                     <img 
                       src="/images/img_gameiconsplainpadlock.svg" 
                       alt="" 
-                      className="absolute left-lg top-1/2 transform -translate-y-1/2 w-[20px] h-[20px] z-10"
+                      className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 z-10"
                     />
                     <EditText
                       placeholder="Confirm Password"
@@ -399,12 +399,12 @@ const Registration = () => {
                       text_color="#0000007f"
                       border_border="1 solid #0000007f"
                       border_border_radius="8px"
-                      padding="t=16px,r=12px,b=16px,l=58px"
+                      padding="t=16px,r=12px,b=16px,l=40px"
                       type="password"
                       value={formData.confirmPassword}
                       onChange={handleInputChange('confirmPassword')}
                       error={errors.confirmPassword}
-                      className="w-full"
+                      className="w-full pl-10"
                     />
                   </div>
                 </div>
